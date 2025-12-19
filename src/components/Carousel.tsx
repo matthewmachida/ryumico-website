@@ -13,6 +13,8 @@ type CarouselProps = {
 
 export default function Carousel(props: CarouselProps) {
   return(
+    // Swiper is a JSX Component carousel library
+    // Could work on making the features customizable based on props
     <Swiper 
       className="w-full"
       style={{ height: `${props.height}vh` }}
