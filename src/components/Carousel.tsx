@@ -13,23 +13,34 @@ type CarouselProps = {
 
 export default function Carousel(props: CarouselProps) {
   return(
-    // Swiper is a JSX Component carousel library
     // Could work on making the features customizable based on props
-    <Swiper 
-      className="w-full"
-      style={{ height: `${props.height}vh` }}
-      modules={[Autoplay]}
-      autoplay={{delay: 3000}}
-      loop={true}
-      slidesPerView={1}
-    >
-      {props.slides.map((item, i) => (
-        <SwiperSlide key={i}>
-          <div className={"relative w-full"} style={{ height: `${props.height}vh` }}>
-            {item}
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="relative w-full" style={{ height: `${props.height}vh` }}>
+      {/* Swiper Carousel */}
+      <Swiper 
+        className="w-full h-full"
+        modules={[Autoplay]}
+        autoplay={{delay: 3000}}
+        loop={true}
+        slidesPerView={1}
+      >
+        {props.slides.map((item, i) => (
+          <SwiperSlide key={i}>
+            <div className={"object-cover w-full h-full"} style={{ height: `${props.height}vh` }}>
+              {item}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none"></div>
+
+      {/* Text overlay */}
+      <div className="absolute bottom-0 left-0 p-20 z-20">
+        <h1 className="text-white">Ryumico Co.</h1>
+        <h3 className="text-white">Welcome to Ryumico Sticker Co.!</h3>
+      </div>
+    </div>
+    
   );
 }
