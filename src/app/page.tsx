@@ -18,10 +18,9 @@ export default function Home() {
             height={85}
             slides={list}
           />
-          Home Page!
-
           <h1 className="bg-orange-900">I'm an h1 tag!</h1>
           <p className="bg-yellow-900">I'm a p tag!</p>
+          <p className="bg-purple-500 w-[300px] h-[600px]">another p tag</p>
         </div>
       </main>
     </div>
