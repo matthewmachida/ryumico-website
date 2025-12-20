@@ -27,13 +27,13 @@ body {
 }
 
 h1 {
-  font-size: xxx-large;
-  font-style: bold
+  font-size: 12vh;
+  font-weight: 800;
 }
 
 h3 {
-  font-size: large;
-  font-style: bold
+  font-size: 4vh;
+  font-weight: 500;
 }
 
 .nav-button {

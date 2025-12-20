@@ -1,5 +1,6 @@
 import Carousel from "@/components/Carousel";
 import NavBar from "@/components/NavBar";
+import Spacer from "@/components/Spacer";
 import Image from "next/image";
 
 export default function Home() {
@@ -18,9 +19,15 @@ export default function Home() {
             height={85}
             slides={list}
           />
-          <h1 className="bg-orange-900">I'm an h1 tag!</h1>
-          <p className="bg-yellow-900">I'm a p tag!</p>
-          <p className="bg-purple-500 w-[300px] h-[600px]">another p tag</p>
+          <Spacer height={5}/>
+          
+          {/* Welcome blurb */}
+
+          {/* Sticker carousel */}
+
+          {/* Contact us */}
+
+          {/* Footer */}
         </div>
       </main>
     </div>
