@@ -1,4 +1,4 @@
-import Carousel from "@/components/Carousel";
+import PhotoCarousel from "@/components/PhotoCarousel";
 import NavBar from "@/components/NavBar";
 import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
@@ -15,13 +15,16 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
         <div className="flex flex-col items-center justify-center">
+          {/* Header navigation bar */}
           <NavBar/>
-          <Carousel
+          {/* Banner photo carousel */}
+          <PhotoCarousel
             height={85}
             slides={list}
+            title={"Ryumico Co."}
+            subtitle={"Welcome to Ryumico Sticker Co.!"}
           />
           <Spacer height={5}/>
-          
           {/* Welcome blurb */}
           <PhotoAndText
             src="/images/c1.jpg"
@@ -29,9 +32,7 @@ export default function Home() {
             header="Ryumico Sticker Co."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           />
-
           <Spacer height={5}/>
-
           {/* Sticker carousel */}
 
           {/* Contact us */}

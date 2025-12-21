@@ -6,12 +6,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css";
 
-type CarouselProps = {
+type PhotoCarouselProps = {
   height: number // in vh units, not px!
-  slides: ReactElement[];
+  slides: ReactElement[]
+  title?: string
+  subtitle?: string
 };
 
-export default function Carousel(props: CarouselProps) {
+export default function PhotoCarousel(props: PhotoCarouselProps) {
   return(
     // Could work on making the features customizable based on props
     <div className="relative w-full" style={{ height: `${props.height}vh` }}>
@@ -25,7 +27,7 @@ export default function Carousel(props: CarouselProps) {
       >
         {props.slides.map((item, i) => (
           <SwiperSlide key={i}>
-            <div className={"object-cover w-full h-full"} style={{ height: `${props.height}vh` }}>
+            <div className="object-cover w-full h-full" style={{ height: `${props.height}vh` }}>
               {item}
             </div>
           </SwiperSlide>
@@ -36,10 +38,14 @@ export default function Carousel(props: CarouselProps) {
       <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none"></div>
 
       {/* Text overlay */}
-      <div className="absolute bottom-0 left-0 p-20 z-20">
-        <h1 className="text-white">Ryumico Co.</h1>
-        <h3 className="text-white">Welcome to Ryumico Sticker Co.!</h3>
-      </div>
+      {props.title == null? <div/> :
+        <div className="absolute bottom-0 left-0 p-20 z-20">
+          <h1 className="text-white">{props.title}</h1>
+          {props.subtitle == null? <div/> : 
+            <h3 className="text-white">{props.subtitle}</h3>
+          }
+        </div>
+      }
     </div>
     
   );
