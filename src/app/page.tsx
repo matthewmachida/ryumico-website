@@ -1,5 +1,6 @@
 import Carousel from "@/components/Carousel";
 import NavBar from "@/components/NavBar";
+import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center justify-center">
           <NavBar/>
           <Carousel
             height={85}
@@ -22,6 +23,14 @@ export default function Home() {
           <Spacer height={5}/>
           
           {/* Welcome blurb */}
+          <PhotoAndText
+            src="/images/c1.jpg"
+            alt="test photo"
+            header="Ryumico Sticker Co."
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+          />
+
+          <Spacer height={5}/>
 
           {/* Sticker carousel */}
 
