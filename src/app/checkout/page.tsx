@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 export default function Checkout() {
@@ -6,6 +7,7 @@ export default function Checkout() {
       <main className="flex min-h-screen w-full flex flex-col">
         <NavBar/>
         checkout page
+        <Footer/>
       </main>
     </div>
   );

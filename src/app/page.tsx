@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const list = [
@@ -38,6 +39,7 @@ export default function Home() {
           {/* Contact us */}
 
           {/* Footer */}
+          <Footer/>
         </div>
       </main>
     </div>
