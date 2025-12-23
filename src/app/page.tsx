@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const list = [
@@ -26,6 +27,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center">
           {/* Header navigation bar */}
           <NavBar/>
+
           {/* Banner photo carousel */}
           <PhotoCarousel
             height={85}
@@ -33,7 +35,9 @@ export default function Home() {
             title={"Ryumico Co."}
             subtitle={"Welcome to Ryumico Sticker Co.!"}
           />
+
           <Spacer height={5}/>
+
           {/* Welcome blurb */}
           <PhotoAndText
             src="/images/c1.jpg"
@@ -41,10 +45,13 @@ export default function Home() {
             header="Ryumico Sticker Co."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           />
+
           <Spacer height={5}/>
+
           {/* Sticker carousel */}
 
           {/* Contact us */}
+          <Contact/>
 
           {/* Footer */}
           <Footer/>

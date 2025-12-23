@@ -33,6 +33,11 @@ h1 {
   font-weight: 800;
 }
 
+h2 {
+  font-size: 6vh;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 4vh;
   font-weight: 500;
