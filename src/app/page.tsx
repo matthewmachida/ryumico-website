@@ -30,8 +30,8 @@ export default function Home() {
 
           {/* Banner photo carousel */}
           <PhotoCarousel
-            height={85}
             slides={list}
+            height={85}
             title={"Ryumico Co."}
             subtitle={"Welcome to Ryumico Sticker Co.!"}
           />

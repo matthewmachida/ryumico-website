@@ -8,8 +8,8 @@ import "swiper/css";
 import Banner, { ImageProps } from "./Banner";
 
 type PhotoCarouselProps = {
-  height: number // in vh units, not px!
   slides: ImageProps[]
+  height: number // in vh units, not px!
   title?: string
   subtitle?: string
 };
