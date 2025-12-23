@@ -4,6 +4,7 @@ import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import ItemCarousel from "@/components/ItemCarousel";
 
 export default function Home() {
   const list = [
@@ -49,6 +50,11 @@ export default function Home() {
           <Spacer height={5}/>
 
           {/* Sticker carousel */}
+          <ItemCarousel
+            items={[]}
+          />
+
+          <Spacer height={5}/>
 
           {/* Contact us */}
           <Contact/>
