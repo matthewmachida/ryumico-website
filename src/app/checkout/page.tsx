@@ -6,7 +6,9 @@ export default function Checkout() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
         <NavBar/>
-        checkout page
+        {/* List of stickers in cart / empty cart display */}
+
+        {/* Stripe card payment / go to design page */}
         <Footer/>
       </main>
     </div>
