@@ -5,6 +5,7 @@ import Spacer from "@/components/Spacer";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import ItemCarousel from "@/components/ItemCarousel";
+import { ReactElement } from "react";
 
 export default function Home() {
   const list = [
@@ -21,6 +22,16 @@ export default function Home() {
       alt: "carousel 3",
     }
   ];
+
+  const itemList: ReactElement[] = [
+    <div className="w-full h-full bg-red-600"/>,
+    <div className="w-full h-full bg-orange-600"/>,
+    <div className="w-full h-full bg-yellow-600"/>,
+    <div className="w-full h-full bg-green-600"/>,
+    <div className="w-full h-full bg-blue-600"/>,
+    <div className="w-full h-full bg-purple-600"/>,
+    <div className="w-full h-full bg-pink-600"/>
+  ]
 
   return (
     <div className="flex min-h-screen items-center justify-center">
@@ -51,7 +62,7 @@ export default function Home() {
 
           {/* Sticker carousel */}
           <ItemCarousel
-            items={[]}
+            items={itemList}
           />
 
           <Spacer height={5}/>

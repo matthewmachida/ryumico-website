@@ -51,27 +51,13 @@ export default function ItemCarousel(props: ItemCarousel) {
         spaceBetween={20}
         className="w-full h-[50vh]"
       >
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-red-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-orange-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-yellow-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-green-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-blue-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-purple-600"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-[45vh] bg-pink-600"/>
-        </SwiperSlide>
+        {props.items.map((item, i) => (
+          <SwiperSlide key={i}>
+            <div className="w-full h-[45vh]">
+              {item}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
