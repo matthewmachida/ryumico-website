@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import ItemCarousel from "@/components/ItemCarousel";
 import { ReactElement } from "react";
+import CenteredHeader from "@/components/CenteredHeader";
 
 export default function Home() {
   const list = [
@@ -58,9 +59,13 @@ export default function Home() {
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
           />
 
-          <Spacer height={5}/>
+          <Spacer height={7}/>
 
           {/* Sticker carousel */}
+          <CenteredHeader
+            text="Stickers"
+            subtitle="Check out our sticker designs!"
+          />
           <ItemCarousel
             items={itemList}
           />
@@ -69,6 +74,8 @@ export default function Home() {
 
           {/* Contact us */}
           <Contact/>
+
+          <Spacer height={5}/>
 
           {/* Footer */}
           <Footer/>
