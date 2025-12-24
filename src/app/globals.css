@@ -6,6 +6,7 @@
   --navcolor: #79afff;
   /* footercolor is the same as bg-blue-900 */
   --footercolor: #1e3a8a;
+  --hovercolor: #cfcfcf;
 }
 
 /* @theme inline {
@@ -68,6 +69,10 @@ h3 {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+.next-btn, .prev-btn {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
 .nav-button:hover {
   background: #bdd8ff;
 }
@@ -75,4 +80,12 @@ h3 {
 .footer-button:hover {
   background: var(--background);
   color: var(--foreground);
+}
+
+.next-btn:hover, .prev-btn:hover {
+  background: var(--hovercolor);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--foreground) !important;
 }
