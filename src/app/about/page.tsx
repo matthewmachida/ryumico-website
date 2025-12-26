@@ -1,4 +1,5 @@
 import Banner, { ImageProps } from "@/components/Banner";
+import CenteredText from "@/components/CenteredText";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
@@ -19,6 +20,9 @@ export default function About() {
         />
 
         {/* About the company/brand - history */}
+        <CenteredText
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
 
         {/* Meet the creator/designers */}
         <Footer/>
