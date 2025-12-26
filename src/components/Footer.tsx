@@ -12,8 +12,8 @@ export default function Footer() {
           <Link className="h-full" href="/about">
             <h3 className="footer-button h-full flex flex-row items-center">About</h3>
           </Link>
-          <Link className="h-full" href="/designs">
-            <h3 className="footer-button h-full flex flex-row items-center">Designs</h3>
+          <Link className="h-full" href="/stickers">
+            <h3 className="footer-button h-full flex flex-row items-center">Stickers</h3>
           </Link>
           <Link className="h-full" href="/checkout">
             <h3 className="footer-button h-full flex flex-row items-center">Checkout</h3>

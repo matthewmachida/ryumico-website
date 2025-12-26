@@ -2,7 +2,7 @@ import Banner, { ImageProps } from "@/components/Banner";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
-export default function Designs() {
+export default function Stickers() {
   const bannerImgProps: ImageProps = {
     src: "/images/test3.JPG",
     alt: "test banner img"
