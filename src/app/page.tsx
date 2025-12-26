@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import ItemCarousel from "@/components/ItemCarousel";
 import { ReactElement } from "react";
 import CenteredHeader from "@/components/CenteredHeader";
+import Image from "next/image";
 
 export default function Home() {
   const list = [
@@ -25,13 +26,38 @@ export default function Home() {
   ];
 
   const itemList: ReactElement[] = [
-    <div className="w-full h-full bg-red-600"/>,
-    <div className="w-full h-full bg-orange-600"/>,
-    <div className="w-full h-full bg-yellow-600"/>,
-    <div className="w-full h-full bg-green-600"/>,
-    <div className="w-full h-full bg-blue-600"/>,
-    <div className="w-full h-full bg-purple-600"/>,
-    <div className="w-full h-full bg-pink-600"/>
+    <div className="relative w-full h-full">
+      <Image
+        src="/stickers/whalelogo-transparent.png"
+        alt="Whale Sticker"
+        fill
+        className="object-contain"
+      />
+    </div>,
+    <div className="relative w-full h-full">
+      <Image
+        src="/stickers/polarski-transparent.png"
+        alt="Polar Ski Sticker"
+        fill
+        className="object-contain"
+      />
+    </div>,
+    <div className="relative w-full h-full">
+      <Image
+        src="/stickers/bouldotter-transparent.png"
+        alt="Bouldotter Sticker"
+        fill
+        className="object-contain"
+      />
+    </div>,
+    <div className="relative w-full h-full">
+      <Image
+        src="/stickers/bigneedle-transparent.png"
+        alt="Bigneedle Sticker"
+        fill
+        className="object-contain"
+      />
+    </div>
   ]
 
   return (
@@ -55,7 +81,7 @@ export default function Home() {
 
           {/* Welcome blurb */}
           <PhotoAndText
-            src="/images/c1.jpg"
+            src="/images/test2.png"
             alt="test photo"
             header="Ryumico Sticker Co."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
