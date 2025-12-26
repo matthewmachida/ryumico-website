@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 
 export default function Stickers() {
   const bannerImgProps: ImageProps = {
-    src: "/images/test3.JPG",
+    src: "/images/test4.png",
     alt: "test banner img"
   }
 

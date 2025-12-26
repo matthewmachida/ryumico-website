@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 
 export default function About() {
   const bannerImgProps: ImageProps = {
-    src: "/images/test2.jpg",
+    src: "/images/test3.png",
     alt: "test banner img"
   }
 
