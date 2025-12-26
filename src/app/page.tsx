@@ -11,15 +11,15 @@ import CenteredHeader from "@/components/CenteredHeader";
 export default function Home() {
   const list = [
     {
-      src: "/images/c1.jpg",
+      src: "/images/test2.png",
       alt:"carousel 1"
     },
     {
-      src: "/images/c2.jpeg",
+      src: "/images/test3.png",
       alt: "carousel 2"
     },
     {
-      src: "/images/c3.JPG",
+      src: "/images/test4.png",
       alt: "carousel 3",
     }
   ];
@@ -47,6 +47,8 @@ export default function Home() {
             height={85}
             title={"Ryumico Co."}
             subtitle={"Welcome to Ryumico Sticker Co.!"}
+            titleSrc={"/logos/title-logo.png"}
+            titleAlt={"Ryumico Logo"}
           />
 
           <Spacer height={5}/>
