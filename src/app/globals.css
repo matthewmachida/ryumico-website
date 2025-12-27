@@ -49,6 +49,23 @@ h3 {
   font-weight: 500;
 }
 
+.standard-button {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 32px;
+
+  color: var(--background);
+  background: var(--footercolor);
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.standard-button:hover {
+  background: var(--navcolor);
+}
+
 .nav-button {
   background: var(--background);
   font-size: medium;
