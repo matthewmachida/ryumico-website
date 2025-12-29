@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
+const repo = 'ryumico-website';
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: `/${repo}`,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
