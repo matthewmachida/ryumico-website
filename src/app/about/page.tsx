@@ -3,9 +3,11 @@ import CenteredText from "@/components/CenteredText";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function About() {
   const bannerImgProps: ImageProps = {
-    src: "/images/test3.png",
+    src: `${basePath}/images/test3.png`,
     alt: "test banner img"
   }
 

@@ -12,14 +12,16 @@ type ItemCarousel = {
   items: ReactElement[]
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function ItemCarousel(props: ItemCarousel) {
   return (
-    <div className="relative w-full h-[55vh] px-8">
+    <div className="relative w-full h-[55vh] px-24">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[4vh] flex flex-row items-center justify-center gap-8">
         <button className="prev-btn w-[5vh] h-[5vh] z-10 flex flex-col items-center justify-center rounded-full">
           <div className="relative w-[3vh] h-[3vh]">
             <Image
-              src="/icons/arrow.svg"
+              src={`${basePath}/icons/arrow.svg`}
               alt="Right Arrow"
               fill
               className="object-cover [transform:scaleX(-1)]"
@@ -29,7 +31,7 @@ export default function ItemCarousel(props: ItemCarousel) {
         <button className="next-btn w-[5vh] h-[5vh] z-10 flex flex-col items-center justify-center rounded-full">
           <div className="relative w-[3vh] h-[3vh]">
             <Image
-              src="/icons/arrow.svg"
+              src={`${basePath}icons/arrow.svg`}
               alt="Right Arrow"
               fill
               className="object-cover"
