@@ -58,7 +58,7 @@ export default function PhotoCarousel(props: PhotoCarouselProps) {
           <div className="absolute bottom-0 left-0 z-20 w-full h-[30vh]">
             {
               (props.titleSrc != undefined && props.titleAlt != undefined)? // If have and img titleSrc and image titleAlt}
-                <img
+                <Image
                   src={props.titleSrc}
                   alt={props.titleAlt}
                   width={4}
