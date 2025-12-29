@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function NavBar() {
   return (
     <div className="bg-white-900 w-full h-24">
@@ -11,7 +13,7 @@ export default function NavBar() {
             {/* Logo image instead of text for the home page button */}
             <div className="relative h-full">
               <Image
-                src="/logos/whale-logo.png"
+                src={`${BASE_PATH}/logos/whale-logo.png`}
                 alt="Logo"
                 width={0}
                 height={0}

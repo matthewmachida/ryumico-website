@@ -25,7 +25,6 @@ export const Color = {
 export type Color = (typeof Color)[keyof typeof Color]
 
 export default function PhotoAndText(props: PhotoAndTextProps) {
-  console.log(props.src)
   return (
     <div className="relative w-full h-[60vh]">
       {/* Foreground photo and text */}
