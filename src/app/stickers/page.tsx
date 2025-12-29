@@ -6,9 +6,11 @@ import { ReactElement } from "react";
 import ItemDisplay from "@/components/ItemDisplay";
 import Spacer from "@/components/Spacer";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Stickers() {
   const bannerImgProps: ImageProps = {
-    src: "/images/test4.png",
+    src: `${BASE_PATH}/images/test4.png`,
     alt: "test banner img"
   }
 
