@@ -6,7 +6,7 @@ export default function Footer() {
       {/* Page buttons */}
       <div className="flex flex-row items-center justify-center gap-8">
         <nav className="h-full gap-16 flex flex-row items-center">
-          <Link className="h-full" href="/..">
+          <Link className="h-full" href="/">
             <h3 className="footer-button h-full flex flex-row items-center">Home</h3>
           </Link>
           <Link className="h-full" href="/about">

@@ -9,7 +9,7 @@ export default function NavBar() {
       <div className="w-full h-full px-16 flex flex-row justify-between">
         {/* Left Side of NavBar */}
         <nav className="h-full gap-16 flex flex-row items-center">
-          <Link className="h-full" href="/..">
+          <Link className="h-full" href="/">
             {/* Logo image instead of text for the home page button */}
             <div className="relative h-full">
               <Image
