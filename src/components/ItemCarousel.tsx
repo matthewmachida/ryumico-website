@@ -12,7 +12,7 @@ type ItemCarousel = {
   items: ReactElement[]
 }
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = "ryumico-website";
 
 export default function ItemCarousel(props: ItemCarousel) {
   return (

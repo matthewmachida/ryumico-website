@@ -9,7 +9,7 @@ import { ReactElement } from "react";
 import CenteredHeader from "@/components/CenteredHeader";
 import Image from "next/image";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = "ryumico-website";
 
 export default function Home() {
   const list = [

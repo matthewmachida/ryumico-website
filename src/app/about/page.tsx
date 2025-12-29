@@ -3,7 +3,7 @@ import CenteredText from "@/components/CenteredText";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = "ryumico-website";
 
 export default function About() {
   const bannerImgProps: ImageProps = {

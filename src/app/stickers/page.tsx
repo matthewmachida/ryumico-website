@@ -6,7 +6,7 @@ import { ReactElement } from "react";
 import ItemDisplay from "@/components/ItemDisplay";
 import Spacer from "@/components/Spacer";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const basePath = "ryumico-website";
 
 export default function Stickers() {
   const bannerImgProps: ImageProps = {
