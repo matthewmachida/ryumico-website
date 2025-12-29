@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
-const repo = 'ryumico-website';
-
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}`,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || "",
   images: {
     unoptimized: true,
   },
