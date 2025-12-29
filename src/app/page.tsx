@@ -75,7 +75,7 @@ export default function Home() {
             height={85}
             title={"Ryumico Co."}
             subtitle={"Welcome to Ryumico Sticker Co.!"}
-            titleSrc={"/logos/title-logo.png"}
+            titleSrc={`${BASE_PATH}/logos/title-logo.png`}
             titleAlt={"Ryumico Logo"}
           />
 
@@ -83,7 +83,7 @@ export default function Home() {
 
           {/* Welcome blurb */}
           <PhotoAndText
-            src="/images/test2.png"
+            src={`${BASE_PATH}/images/test2.png`}
             alt="test photo"
             header="Ryumico Sticker Co."
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"

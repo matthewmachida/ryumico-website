@@ -17,7 +17,7 @@ export default function Stickers() {
   const itemList: ReactElement[] = [
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/whalelogo-transparent.png"
+        src={`${BASE_PATH}/stickers/whalelogo-transparent.png`}
         alt="Whale Sticker"
         fill
         className="object-contain"
@@ -25,7 +25,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/polarski-transparent.png"
+        src={`${BASE_PATH}/stickers/polarski-transparent.png`}
         alt="Polar Ski Sticker"
         fill
         className="object-contain"
@@ -33,7 +33,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/bouldotter-transparent.png"
+        src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
         alt="Bouldotter Sticker"
         fill
         className="object-contain"
@@ -41,7 +41,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/bigneedle-transparent.png"
+        src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
         alt="Bigneedle Sticker"
         fill
         className="object-contain"
@@ -49,7 +49,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/bouldotter-transparent.png"
+        src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
         alt="Bouldotter Sticker"
         fill
         className="object-contain"
@@ -57,7 +57,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src="/stickers/bigneedle-transparent.png"
+        src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
         alt="Bigneedle Sticker"
         fill
         className="object-contain"
