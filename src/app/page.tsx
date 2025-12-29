@@ -12,15 +12,15 @@ import Image from "next/image";
 export default function Home() {
   const list = [
     {
-      src: "ryumico-website/images/test2.png",
+      src: "/images/test2.png",
       alt:"carousel 1"
     },
     {
-      src: "ryumico-website/images/test3.png",
+      src: "/images/test3.png",
       alt: "carousel 2"
     },
     {
-      src: "ryumico-website/images/test4.png",
+      src: "/images/test4.png",
       alt: "carousel 3",
     }
   ];
