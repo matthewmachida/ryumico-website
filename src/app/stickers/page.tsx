@@ -6,18 +6,16 @@ import { ReactElement } from "react";
 import ItemDisplay from "@/components/ItemDisplay";
 import Spacer from "@/components/Spacer";
 
-const basePath = "ryumico-website";
-
 export default function Stickers() {
   const bannerImgProps: ImageProps = {
-    src: `${basePath}/images/test4.png`,
+    src: "/images/test4.png",
     alt: "test banner img"
   }
 
   const itemList: ReactElement[] = [
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/whalelogo-transparent.png`}
+        src="/stickers/whalelogo-transparent.png"
         alt="Whale Sticker"
         fill
         className="object-contain"
@@ -25,7 +23,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/polarski-transparent.png`}
+        src="/stickers/polarski-transparent.png"
         alt="Polar Ski Sticker"
         fill
         className="object-contain"
@@ -33,7 +31,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/bouldotter-transparent.png`}
+        src="/stickers/bouldotter-transparent.png"
         alt="Bouldotter Sticker"
         fill
         className="object-contain"
@@ -41,7 +39,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/bigneedle-transparent.png`}
+        src="/stickers/bigneedle-transparent.png"
         alt="Bigneedle Sticker"
         fill
         className="object-contain"
@@ -49,7 +47,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/bouldotter-transparent.png`}
+        src="/stickers/bouldotter-transparent.png"
         alt="Bouldotter Sticker"
         fill
         className="object-contain"
@@ -57,7 +55,7 @@ export default function Stickers() {
     </div>,
     <div className="relative w-96 h-96">
       <Image
-        src={`${basePath}/stickers/bigneedle-transparent.png`}
+        src="/stickers/bigneedle-transparent.png"
         alt="Bigneedle Sticker"
         fill
         className="object-contain"

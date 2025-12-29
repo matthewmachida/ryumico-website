@@ -3,11 +3,9 @@ import CenteredText from "@/components/CenteredText";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
-const basePath = "ryumico-website";
-
 export default function About() {
   const bannerImgProps: ImageProps = {
-    src: `${basePath}/images/test3.png`,
+    src: "/images/test3.png",
     alt: "test banner img"
   }
 

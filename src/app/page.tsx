@@ -9,20 +9,18 @@ import { ReactElement } from "react";
 import CenteredHeader from "@/components/CenteredHeader";
 import Image from "next/image";
 
-const basePath = "ryumico-website";
-
 export default function Home() {
   const list = [
     {
-      src: `${basePath}/images/test2.png`,
+      src: "/images/test2.png",
       alt:"carousel 1"
     },
     {
-      src: `${basePath}/images/test3.png`,
+      src: "/images/test3.png",
       alt: "carousel 2"
     },
     {
-      src: `${basePath}/images/test4.png`,
+      src: "/images/test4.png",
       alt: "carousel 3",
     }
   ];
@@ -30,7 +28,7 @@ export default function Home() {
   const itemList: ReactElement[] = [
     <div className="relative w-full h-full">
       <Image
-        src={`${basePath}/stickers/whalelogo-transparent.png`}
+        src="/stickers/whalelogo-transparent.png"
         alt="Whale Sticker"
         fill
         className="object-contain"
@@ -38,7 +36,7 @@ export default function Home() {
     </div>,
     <div className="relative w-full h-full">
       <Image
-        src={`${basePath}/stickers/polarski-transparent.png`}
+        src="/stickers/polarski-transparent.png"
         alt="Polar Ski Sticker"
         fill
         className="object-contain"
@@ -46,7 +44,7 @@ export default function Home() {
     </div>,
     <div className="relative w-full h-full">
       <Image
-        src={`${basePath}/stickers/bouldotter-transparent.png`}
+        src="/stickers/bouldotter-transparent.png"
         alt="Bouldotter Sticker"
         fill
         className="object-contain"
@@ -54,7 +52,7 @@ export default function Home() {
     </div>,
     <div className="relative w-full h-full">
       <Image
-        src={`${basePath}/stickers/bigneedle-transparent.png`}
+        src="/stickers/bigneedle-transparent.png"
         alt="Bigneedle Sticker"
         fill
         className="object-contain"
