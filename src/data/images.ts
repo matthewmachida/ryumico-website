@@ -16,8 +16,15 @@ export const stickers = {
   bigneedle: {
     src: addBasePath("/stickers/bigneedle-transparent.png"),
     alt: "Bigneedle Sticker"
-  },
+  }
 }
+
+export const stickersList = [
+  stickers.whalelogo,
+  stickers.polarski,
+  stickers.bouldotter,
+  stickers.bigneedle
+]
 
 export const logos = {
   logo: stickers.whalelogo,

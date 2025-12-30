@@ -9,59 +9,57 @@ import Spacer from "@/components/Spacer";
 
 import { ReactElement } from "react";
 import Image from "next/image";
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { homeImages, homeItemList, homeText } from "@/data/home";
+import { testImages } from "@/data/images";
 
 export default function Home() {
-  const list = [
-    {
-      src: `${BASE_PATH}/images/test2.png`,
-      alt:"carousel 1"
-    },
-    {
-      src: `${BASE_PATH}/images/test3.png`,
-      alt: "carousel 2"
-    },
-    {
-      src: `${BASE_PATH}/images/test4.png`,
-      alt: "carousel 3",
-    }
-  ];
-
-  const itemList: ReactElement[] = [
-    <div className="relative w-full h-full">
-      <Image
-        src={`${BASE_PATH}/stickers/whalelogo-transparent.png`}
-        alt="Whale Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-full h-full">
-      <Image
-        src={`${BASE_PATH}/stickers/polarski-transparent.png`}
-        alt="Polar Ski Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-full h-full">
-      <Image
-        src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
-        alt="Bouldotter Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-full h-full">
-      <Image
-        src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
-        alt="Bigneedle Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>
-  ]
+  // const itemList: ReactElement[] = [
+  //   <div className="relative w-full h-full">
+  //     <Image
+  //       src={`${BASE_PATH}/stickers/whalelogo-transparent.png`}
+  //       alt="Whale Sticker"
+  //       fill
+  //       className="object-contain"
+  //     />
+  //   </div>,
+  //   <div className="relative w-full h-full">
+  //     <Image
+  //       src={`${BASE_PATH}/stickers/polarski-transparent.png`}
+  //       alt="Polar Ski Sticker"
+  //       fill
+  //       className="object-contain"
+  //     />
+  //   </div>,
+  //   <div className="relative w-full h-full">
+  //     <Image
+  //       src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
+  //       alt="Bouldotter Sticker"
+  //       fill
+  //       className="object-contain"
+  //     />
+  //   </div>,
+  //   <div className="relative w-full h-full">
+  //     <Image
+  //       src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
+  //       alt="Bigneedle Sticker"
+  //       fill
+  //       className="object-contain"
+  //     />
+  //   </div>
+  // ]
+  const itemList: ReactElement[] = []
+  homeItemList.forEach((item) => {
+    itemList.push(
+      <div className="relative w-full h-full">
+        <Image
+          src={item.src}
+          alt={item.alt}
+          fill
+          className="object-contain"
+        />
+      </div>
+    );
+  });
 
   return (
     <div className="flex min-h-screen items-center justify-center">
@@ -72,30 +70,30 @@ export default function Home() {
 
           {/* Banner photo carousel */}
           <PhotoCarousel
-            slides={list}
+            slides={homeImages.photoCarousel}
             height={85}
-            title={"Ryumico Co."}
-            subtitle={"Welcome to Ryumico Sticker Co.!"}
-            titleSrc={`${BASE_PATH}/logos/title-logo.png`}
-            titleAlt={"Ryumico Logo"}
+            title={homeText.bannerTitle}
+            subtitle={homeText.bannerSubtitle}
+            titleSrc={homeImages.bannerImgSrc}
+            titleAlt={homeImages.bannerImgAlt}
           />
 
           <Spacer height={5}/>
 
           {/* Welcome blurb */}
           <PhotoAndText
-            src={`${BASE_PATH}/images/test2.png`}
-            alt="test photo"
-            header="Ryumico Sticker Co."
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            src={testImages.img2.src}
+            alt={testImages.img2.alt}
+            header={homeText.introHeader}
+            text={homeText.introText}
           />
 
           <Spacer height={7}/>
 
           {/* Sticker carousel */}
           <CenteredHeader
-            text="Stickers"
-            subtitle="Check out our sticker designs!"
+            text={homeText.itemsHeader}
+            subtitle={homeText.itemsSubtitle}
           />
           <ItemCarousel
             items={itemList}
