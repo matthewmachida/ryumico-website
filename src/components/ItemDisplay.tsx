@@ -13,6 +13,7 @@ export default function ItemDisplay(props: ItemDisplayProps) {
   const more = props.items.slice(4);
 
   return (
+    // First row of items, including the first 4 items
     <div className="w-full flex flex-col items-center justify-center gap-8">
       <div className="grid grid-cols-4 gap-8 px-24">
         {first.map((item, i) => (
@@ -22,7 +23,7 @@ export default function ItemDisplay(props: ItemDisplayProps) {
         ))}
       </div>
 
-      {
+      { // if there are more than 4 items, add a dropdown area with a "see more" button 
         expanded && (more.length > 0) && (
           <div className="grid grid-cols-4 gap-8 px-24">
             {more.map((item, i) => (

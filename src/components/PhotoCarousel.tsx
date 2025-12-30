@@ -1,12 +1,12 @@
 "use client"
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css/autoplay";
-import "swiper/css";
 import Banner, { ImageProps } from "./Banner";
 import Image from "next/image";
-import { error } from "console";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/autoplay";
 
 type PhotoCarouselProps = {
   slides: ImageProps[]

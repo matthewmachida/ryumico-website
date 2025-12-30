@@ -1,5 +1,5 @@
-import Image from "next/image";
-import PhotoAndText, { Color } from "./PhotoAndText";
+import { Color } from "@/lib/colors";
+import PhotoAndText from "./PhotoAndText";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 

@@ -18,16 +18,18 @@ export default function ItemCarousel(props: ItemCarousel) {
   return (
     <div className="relative w-full h-[55vh] px-24">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[4vh] flex flex-row items-center justify-center gap-8">
+        {/* Left arrow button absolutely positioned below the carousel */}
         <button className="prev-btn w-[5vh] h-[5vh] z-10 flex flex-col items-center justify-center rounded-full">
           <div className="relative w-[3vh] h-[3vh]">
             <Image
               src={`${BASE_PATH}/icons/arrow.svg`}
-              alt="Right Arrow"
+              alt="Left Arrow"
               fill
               className="object-cover [transform:scaleX(-1)]"
             />
           </div>
         </button>
+        {/* Right arrow button */}
         <button className="next-btn w-[5vh] h-[5vh] z-10 flex flex-col items-center justify-center rounded-full">
           <div className="relative w-[3vh] h-[3vh]">
             <Image
@@ -39,6 +41,7 @@ export default function ItemCarousel(props: ItemCarousel) {
           </div>
         </button>
       </div>
+      {/* Item carousel itself */}
       <Swiper
         modules={[Navigation, Pagination]}
         navigation={{

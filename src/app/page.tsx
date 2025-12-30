@@ -1,12 +1,13 @@
-import PhotoCarousel from "@/components/PhotoCarousel";
+import CenteredHeader from "@/components/CenteredHeader";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import ItemCarousel from "@/components/ItemCarousel";
 import NavBar from "@/components/NavBar";
 import PhotoAndText from "@/components/PhotoAndText";
+import PhotoCarousel from "@/components/PhotoCarousel";
 import Spacer from "@/components/Spacer";
-import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
-import ItemCarousel from "@/components/ItemCarousel";
+
 import { ReactElement } from "react";
-import CenteredHeader from "@/components/CenteredHeader";
 import Image from "next/image";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";

@@ -18,8 +18,8 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Ryumico Co.",
-  description: "Website for Ryumico Co.",
+  title: "Ryumico Sticker Co.",
+  description: "Homepage for Ryumico Sticker Co.!",
 };
 
 export default function RootLayout({

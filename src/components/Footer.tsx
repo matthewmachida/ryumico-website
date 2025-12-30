@@ -23,6 +23,7 @@ export default function Footer() {
       {/* Special thanks */}
       <p className="text-white">Made by Ryumico Sticker Co. with love 💖</p>
       {/* Copyright? */}
+      {/* Logo? */}
     </div>
   );
 }

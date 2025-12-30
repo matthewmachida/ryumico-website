@@ -27,6 +27,9 @@ export default function About() {
         />
 
         {/* Meet the creator/designers */}
+
+        {/* Contact us */}
+        
         <Footer/>
       </main>
     </div>

@@ -1,10 +1,11 @@
 import Banner, { ImageProps } from "@/components/Banner";
 import Footer from "@/components/Footer";
-import Image from "next/image";
-import NavBar from "@/components/NavBar";
-import { ReactElement } from "react";
 import ItemDisplay from "@/components/ItemDisplay";
+import NavBar from "@/components/NavBar";
 import Spacer from "@/components/Spacer";
+
+import Image from "next/image";
+import { ReactElement } from "react";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
