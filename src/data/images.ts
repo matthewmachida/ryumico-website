@@ -48,19 +48,19 @@ export const icons = {
 
 export const testImages = {
   img1: {
-    src: addBasePath("images/test.png"),
+    src: addBasePath("/images/test.png"),
     alt: "test img 1"
   },
   img2: {
-    src: addBasePath("images/test2.png"),
+    src: addBasePath("/images/test2.png"),
     alt: "test img 2"
   },
   img3: {
-    src: addBasePath("images/test3.png"),
+    src: addBasePath("/images/test3.png"),
     alt: "test img 3"
   },
   img4: {
-    src: addBasePath("images/test4.png"),
+    src: addBasePath("/images/test4.png"),
     alt: "test img 4"
   },
   testCarousel: [
