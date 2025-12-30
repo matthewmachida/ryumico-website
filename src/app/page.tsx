@@ -13,40 +13,6 @@ import { homeImages, homeItemList, homeText } from "@/data/home";
 import { testImages } from "@/data/images";
 
 export default function Home() {
-  // const itemList: ReactElement[] = [
-  //   <div className="relative w-full h-full">
-  //     <Image
-  //       src={`${BASE_PATH}/stickers/whalelogo-transparent.png`}
-  //       alt="Whale Sticker"
-  //       fill
-  //       className="object-contain"
-  //     />
-  //   </div>,
-  //   <div className="relative w-full h-full">
-  //     <Image
-  //       src={`${BASE_PATH}/stickers/polarski-transparent.png`}
-  //       alt="Polar Ski Sticker"
-  //       fill
-  //       className="object-contain"
-  //     />
-  //   </div>,
-  //   <div className="relative w-full h-full">
-  //     <Image
-  //       src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
-  //       alt="Bouldotter Sticker"
-  //       fill
-  //       className="object-contain"
-  //     />
-  //   </div>,
-  //   <div className="relative w-full h-full">
-  //     <Image
-  //       src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
-  //       alt="Bigneedle Sticker"
-  //       fill
-  //       className="object-contain"
-  //     />
-  //   </div>
-  // ]
   const itemList: ReactElement[] = []
   homeItemList.forEach((item) => {
     itemList.push(
