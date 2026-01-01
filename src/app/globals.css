@@ -48,6 +48,10 @@ p {
   font-size: 1.75vh;
 }
 
+.larger-p {
+  font-size: 2.25vh;
+}
+
 .dark-p {
   color: var(--background);
   font-weight: 500;

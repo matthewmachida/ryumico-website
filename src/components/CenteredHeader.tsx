@@ -10,7 +10,7 @@ export default function CenteredHeader(props: CenteredHeaderProps) {
         {props.text}
       </h2>
       {/* Only include subtitle if it exists */}
-      {props.subtitle == undefined? <h3 className="py-2">{props.subtitle}</h3> : <div/>}
+      {props.subtitle != undefined? <p className="py-2 larger-p">{props.subtitle}</p> : <div/>}
     </div>
   );
 }
