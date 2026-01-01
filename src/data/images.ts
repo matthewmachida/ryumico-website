@@ -43,6 +43,10 @@ export const icons = {
   rightarrow: {
     src: addBasePath("/icons/arrow.svg"),
     alt: "right arrow"
+  },
+  email: {
+    src: addBasePath("/icons/email.svg"),
+    alt: "email symbol"
   }
 }
 

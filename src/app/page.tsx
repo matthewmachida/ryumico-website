@@ -37,7 +37,6 @@ export default function Home() {
           {/* Banner photo carousel */}
           <PhotoCarousel
             slides={homeImages.photoCarousel}
-            height={85}
             title={homeText.bannerTitle}
             subtitle={homeText.bannerSubtitle}
             titleSrc={homeImages.bannerImgSrc}

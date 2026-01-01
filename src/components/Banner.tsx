@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 type BannerProps = {
-  height: number
   img: ImageProps
   title?: string
   subtitle?: string
@@ -14,7 +13,7 @@ export type ImageProps = {
 
 export default function Banner(props: BannerProps) {
   return (
-    <div className="relative w-full h-full" style={{ height: `${props.height}vh` }}>
+    <div className="relative w-full h-256">
       <Image src={props.img.src} alt={props.img.alt} fill className="object-cover"/>
 
       {/* Dark overlay */}

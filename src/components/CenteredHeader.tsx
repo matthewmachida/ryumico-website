@@ -5,7 +5,7 @@ type CenteredHeaderProps = {
 
 export default function CenteredHeader(props: CenteredHeaderProps) {
   return (
-    <div className="w-full h-[10vh] flex flex-col items-center justify-center">
+    <div className="w-full h-32 flex flex-col items-center justify-center">
       <h2>
         {props.text}
       </h2>

@@ -13,11 +13,11 @@ type PhotoAndTextProps = {
 
 export default function PhotoAndText(props: PhotoAndTextProps) {
   return (
-    <div className="relative w-full h-[60vh]">
+    <div className="relative w-full h-160">
       {/* Foreground photo and text */}
-      <div className="relative w-full h-[60vh] z-10 flex flex-row items-center justify-center">
+      <div className="relative w-full h-160 z-10 flex flex-row items-center justify-center">
         {/* Photo */}
-        <div className="relative w-1/2 h-[60vh] m-8 flex flex-col items-center justify-center rounded-2xl overflow-hidden">
+        <div className="relative w-1/2 h-160 m-8 flex flex-col items-center justify-center rounded-2xl overflow-hidden">
           {(props.width != undefined && props.height != undefined)?
             <Image
               src={props.src}
@@ -48,10 +48,10 @@ export default function PhotoAndText(props: PhotoAndTextProps) {
 
       {/* Background stripe */}
       {props.color == undefined? <div/> : 
-        <div className="absolute inset-0 w-full h-[60vh] flex flex-col">
-          <div className="w-full h-[5vh]"/>
-          <div className={`w-full h-[50vh] ${props.color}`}/>
-          <div className="w-full h-[5vh]"/>
+        <div className="absolute inset-0 w-full h-160 flex flex-col">
+          <div className="w-full h-20"/>
+          <div className={`w-full h-120 ${props.color}`}/>
+          <div className="w-full h-20"/>
         </div>
       }
     </div>

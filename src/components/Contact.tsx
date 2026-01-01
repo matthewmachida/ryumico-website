@@ -1,16 +1,15 @@
 import { Color } from "@/lib/colors";
 import PhotoAndText from "./PhotoAndText";
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { contactImages, contactText } from "@/data/contact";
 
 export default function Contact() {
   // TODO: make custom animation for email logo?
   return (
     <PhotoAndText
-      src={`${BASE_PATH}/icons/email.svg`}
-      alt="Email icon"
-      header="Need to Contact Us?"
-      text="If you have any questions or inquiries, send us an email at example@email.com and we will try get back to you!"
+      src={contactImages.emailIcon.src}
+      alt={contactImages.emailIcon.alt}
+      header={contactText.header}
+      text={contactText.text}
       color={Color.Orange}
       width={200}
       height={200}

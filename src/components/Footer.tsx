@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="w-full h-[25vh] flex flex-col items-center p-8 gap-8 bg-blue-900">
+    <div className="w-full h-80 flex flex-col items-center p-8 gap-8 bg-blue-900">
       {/* Page buttons */}
       <div className="flex flex-row items-center justify-center gap-8">
         <nav className="h-full gap-16 flex flex-row items-center">

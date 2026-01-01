@@ -10,7 +10,6 @@ import "swiper/css/autoplay";
 
 type PhotoCarouselProps = {
   slides: ImageProps[]
-  height: number // in vh units, not px!
   title?: string
   subtitle?: string
   titleSrc?: string
@@ -32,7 +31,7 @@ export default function PhotoCarousel(props: PhotoCarouselProps) {
   
   return(
     // Could work on making the features customizable based on props
-    <div className="relative w-full" style={{ height: `${props.height}vh` }}>
+    <div className="relative w-full h-256">
       {/* Swiper Carousel */}
       <Swiper 
         className="w-full h-full"
@@ -44,7 +43,6 @@ export default function PhotoCarousel(props: PhotoCarouselProps) {
         {props.slides.map((item, i) => (
           <SwiperSlide key={i}>
             <Banner
-              height={props.height}
               img={item}
             />
           </SwiperSlide>
@@ -55,7 +53,7 @@ export default function PhotoCarousel(props: PhotoCarouselProps) {
       {
         props.title == undefined && (props.titleSrc == undefined || props.titleAlt == undefined)? // If we do not have title or a valid image
           <div/> : // then display nothing
-          <div className="absolute bottom-0 left-0 z-20 w-full h-[30vh]">
+          <div className="absolute bottom-0 left-0 z-20 w-full h-96">
             {
               (props.titleSrc != undefined && props.titleAlt != undefined)? // If have and img titleSrc and image titleAlt}
                 <Image
