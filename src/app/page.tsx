@@ -13,7 +13,7 @@ import { homeImages, homeItemList, homeText } from "@/data/home";
 import { testImages } from "@/data/images";
 
 export default function Home() {
-  const itemList: ReactElement[] = []
+  const itemList: ReactElement[] = [];
   homeItemList.forEach((item) => {
     itemList.push(
       <div className="relative w-full h-full">

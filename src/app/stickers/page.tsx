@@ -1,70 +1,40 @@
-import Banner, { ImageProps } from "@/components/Banner";
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import ItemDisplay from "@/components/ItemDisplay";
 import NavBar from "@/components/NavBar";
 import Spacer from "@/components/Spacer";
+import { allStickersList, stickerPageImages, stickerPageText } from "@/data/stickerpage";
 
 import Image from "next/image";
 import { ReactElement } from "react";
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export default function Stickers() {
-  const bannerImgProps: ImageProps = {
-    src: `${BASE_PATH}/images/test4.png`,
-    alt: "test banner img"
-  }
-
-  const itemList: ReactElement[] = [
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/whalelogo-transparent.png`}
-        alt="Whale Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/polarski-transparent.png`}
-        alt="Polar Ski Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
-        alt="Bouldotter Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
-        alt="Bigneedle Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/bouldotter-transparent.png`}
-        alt="Bouldotter Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>,
-    <div className="relative w-96 h-96">
-      <Image
-        src={`${BASE_PATH}/stickers/bigneedle-transparent.png`}
-        alt="Bigneedle Sticker"
-        fill
-        className="object-contain"
-      />
-    </div>
-  ]
+  const bannerImgProps = stickerPageImages.banner;
+  const itemList: ReactElement[] = [];
+  allStickersList.forEach((item) => {
+    itemList.push(
+      <div className="relative w-96 h-96">
+        <Image
+          src={item.src}
+          alt={item.alt}
+          fill
+          className="object-contain"
+        />
+      </div>
+    );
+  });
+  allStickersList.forEach((item) => {
+    itemList.push(
+      <div className="relative w-96 h-96">
+        <Image
+          src={item.src}
+          alt={item.alt}
+          fill
+          className="object-contain"
+        />
+      </div>
+    );
+  });
 
   return (
     <div className="flex min-h-screen items-center justify-center">
@@ -73,8 +43,8 @@ export default function Stickers() {
         <Banner
           height={85}
           img={bannerImgProps}
-          title={"Stickers"}
-          subtitle={"Check out and purchase our stickers!"}
+          title={stickerPageText.bannerTitle}
+          subtitle={stickerPageText.bannerSubtitle}
         />
 
         <Spacer
