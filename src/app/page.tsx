@@ -1,8 +1,6 @@
 import CenteredHeader from "@/components/CenteredHeader";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import ItemCarousel from "@/components/ItemCarousel";
-import NavBar from "@/components/NavBar";
 import PhotoAndText from "@/components/PhotoAndText";
 import PhotoCarousel from "@/components/PhotoCarousel";
 import Spacer from "@/components/Spacer";
@@ -31,9 +29,6 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
         <div className="flex flex-col items-center justify-center">
-          {/* Header navigation bar */}
-          <NavBar/>
-
           {/* Banner photo carousel */}
           <PhotoCarousel
             slides={homeImages.photoCarousel}
@@ -70,9 +65,6 @@ export default function Home() {
           <Contact/>
 
           <Spacer height={5}/>
-
-          {/* Footer */}
-          <Footer/>
         </div>
       </main>
     </div>

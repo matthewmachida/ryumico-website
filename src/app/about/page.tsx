@@ -1,7 +1,6 @@
 import Banner, { ImageProps } from "@/components/Banner";
 import CenteredText from "@/components/CenteredText";
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
+import Spacer from "@/components/Spacer";
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -14,9 +13,7 @@ export default function About() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
-        <NavBar/>
         <Banner
-          height={85}
           img={bannerImgProps}
           title={"About Us"}
         />
@@ -29,8 +26,8 @@ export default function About() {
         {/* Meet the creator/designers */}
 
         {/* Contact us */}
-        
-        <Footer/>
+
+        <Spacer height={5}/>
       </main>
     </div>
   );

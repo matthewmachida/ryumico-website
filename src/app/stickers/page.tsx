@@ -1,7 +1,5 @@
 import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
 import ItemDisplay from "@/components/ItemDisplay";
-import NavBar from "@/components/NavBar";
 import Spacer from "@/components/Spacer";
 import { allStickersList, stickerPageImages, stickerPageText } from "@/data/stickerpage";
 
@@ -39,9 +37,7 @@ export default function Stickers() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <main className="flex min-h-screen w-full flex flex-col">
-        <NavBar/>
         <Banner
-          height={85}
           img={bannerImgProps}
           title={stickerPageText.bannerTitle}
           subtitle={stickerPageText.bannerSubtitle}
@@ -52,6 +48,8 @@ export default function Stickers() {
         />
 
         {/* New designs */}
+
+        {/* List of sticker designs - see more button for all */}
         <ItemDisplay
           items={itemList}
         />
@@ -59,9 +57,6 @@ export default function Stickers() {
         <Spacer
           height={5}
         />
-
-        {/* List of sticker designs - see more button for all */}
-        <Footer/>
       </main>
     </div>
   );
