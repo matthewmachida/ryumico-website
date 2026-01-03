@@ -1,13 +1,15 @@
 import Banner, { ImageProps } from "@/components/Banner";
+import CenteredHeader from "@/components/CenteredHeader";
 import CenteredText from "@/components/CenteredText";
+import Contact from "@/components/Contact";
+import PhotoAndText from "@/components/PhotoAndText";
 import Spacer from "@/components/Spacer";
-
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+import { aboutImages, aboutText } from "@/data/about";
 
 export default function About() {
   const bannerImgProps: ImageProps = {
-    src: `${BASE_PATH}/images/test3.png`,
-    alt: "test banner img"
+    src: aboutImages.banner.src,
+    alt: aboutImages.banner.alt
   }
 
   return (
@@ -15,18 +17,30 @@ export default function About() {
       <main className="flex min-h-screen w-full flex flex-col">
         <Banner
           img={bannerImgProps}
-          title={"About Us"}
+          title={aboutText.bannerTitle}
         />
+        <Spacer height={7}/>
 
         {/* About the company/brand - history */}
-        <CenteredText
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        <CenteredHeader
+          text={aboutText.introHeader}
         />
+        <CenteredText
+          text={aboutText.introText}
+        />
+        <Spacer height={15}/>
 
         {/* Meet the creator/designers */}
+        <PhotoAndText
+          src={aboutImages.owner.src}
+          alt={aboutImages.owner.alt}
+          header={aboutText.ownerHeader}
+          text={aboutText.ownerText}
+        />
+        <Spacer height={5}/>
 
         {/* Contact us */}
-
+        <Contact/>
         <Spacer height={5}/>
       </main>
     </div>

@@ -67,6 +67,10 @@ export const testImages = {
     src: addBasePath("/images/test4.png"),
     alt: "test img 4"
   },
+  img5: {
+    src: addBasePath("/images/test5.png"),
+    alt: "test img 5"
+  },
   testCarousel: [
     {
       src: addBasePath("/images/test2.png"),
