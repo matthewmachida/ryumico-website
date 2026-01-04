@@ -1,14 +1,16 @@
+import CenteredElement from "@/components/CenteredElement";
 import CenteredHeader from "@/components/CenteredHeader";
 import Contact from "@/components/Contact";
 import ItemCarousel from "@/components/ItemCarousel";
 import PhotoAndText from "@/components/PhotoAndText";
 import PhotoCarousel from "@/components/PhotoCarousel";
 import Spacer from "@/components/Spacer";
+import { homeImages, homeItemList, homeText } from "@/data/home";
+import { testImages } from "@/data/images";
 
 import { ReactElement } from "react";
 import Image from "next/image";
-import { homeImages, homeItemList, homeText } from "@/data/home";
-import { testImages } from "@/data/images";
+import Link from "next/link";
 
 export default function Home() {
   const itemList: ReactElement[] = [];
@@ -50,6 +52,8 @@ export default function Home() {
 
           <Spacer height={7}/>
 
+          {/* New designs */}
+
           {/* Sticker carousel */}
           <CenteredHeader
             text={homeText.itemsHeader}
@@ -57,6 +61,15 @@ export default function Home() {
           />
           <ItemCarousel
             items={itemList}
+          />
+          <CenteredElement
+            element={
+              <Link href="/stickers">
+                <button className="standard-button">
+                  {homeText.stickerPageBtn}
+                </button>
+              </Link>
+            }
           />
 
           <Spacer height={5}/>
