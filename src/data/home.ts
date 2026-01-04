@@ -18,7 +18,9 @@ export const homeText = {
   introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 
   itemsHeader: "Stickers",
-  itemsSubtitle: "Check out our sticker designs!"
+  itemsSubtitle: "Check out our sticker designs!",
+
+  stickerPageBtn: "See all Designs"
 }
 
 export const homeItemList = stickersList;

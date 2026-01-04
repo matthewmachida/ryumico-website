@@ -3,7 +3,7 @@ import { addBasePath } from "@/lib/paths";
 export const stickers = {
   whalelogo: {
     src: addBasePath("/stickers/whalelogo-transparent.png"),
-    alt: "Whale Logo Sticker"
+    alt: "Ryumico Co. Whale Sticker"
   },
   polarski: {
     src: addBasePath("/stickers/polarski-transparent.png"),

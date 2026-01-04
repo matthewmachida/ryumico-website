@@ -1,35 +1,68 @@
+"use client"
+
 import Banner from "@/components/Banner";
 import ItemDisplay from "@/components/ItemDisplay";
+import PurchaseSticker from "@/components/PurchaseSticker";
 import Spacer from "@/components/Spacer";
 import { allStickersList, stickerPageImages, stickerPageText } from "@/data/stickerpage";
+import { nullSticker, removeSuffixFromAlt, Sticker } from "@/lib/stickers";
 
 import Image from "next/image";
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 
 export default function Stickers() {
+  const [displaySticker, setDisplaySticker] = useState(false);
+  const [sticker, setSticker] = useState<Sticker>(nullSticker)
+
   const bannerImgProps = stickerPageImages.banner;
   const itemList: ReactElement[] = [];
   allStickersList.forEach((item) => {
     itemList.push(
       <div className="relative w-96 h-96">
-        <Image
-          src={item.src}
-          alt={item.alt}
-          fill
-          className="object-contain"
-        />
+        <button
+          onClick={() => {
+            if (sticker.src === item.src) {
+              setDisplaySticker(false);
+              setSticker(nullSticker);
+            } else {
+              setSticker({name: removeSuffixFromAlt(item.alt), src: item.src, alt: item.alt});
+              setDisplaySticker(true);
+            }
+          }}
+          className="relative w-full h-96"
+        >
+          <Image
+            src={item.src}
+            alt={item.alt}
+            fill
+            className="object-contain"
+          />
+        </button>
       </div>
     );
   });
   allStickersList.forEach((item) => {
     itemList.push(
       <div className="relative w-96 h-96">
-        <Image
-          src={item.src}
-          alt={item.alt}
-          fill
-          className="object-contain"
-        />
+        <button
+          onClick={() => {
+            if (sticker.src === item.src) {
+              setDisplaySticker(false);
+              setSticker(nullSticker);
+            } else {
+              setSticker({name: removeSuffixFromAlt(item.alt), src: item.src, alt: item.alt});
+              setDisplaySticker(true);
+            }
+          }}
+          className="relative w-full h-96"
+        >
+          <Image
+            src={item.src}
+            alt={item.alt}
+            fill
+            className="object-contain"
+          />
+        </button>
       </div>
     );
   });
@@ -47,7 +80,13 @@ export default function Stickers() {
           height={5}
         />
 
-        {/* New designs */}
+        {
+          displaySticker && (sticker != undefined) && (
+            <PurchaseSticker
+              sticker={sticker}
+            />
+          )
+        }
 
         {/* List of sticker designs - see more button for all */}
         <ItemDisplay
