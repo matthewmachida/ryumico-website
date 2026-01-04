@@ -47,6 +47,14 @@ export const icons = {
   email: {
     src: addBasePath("/icons/email.svg"),
     alt: "email symbol"
+  },
+  minus: {
+    src: addBasePath("/icons/minus.svg"),
+    alt: "minus symbol"
+  },
+  plus: {
+    src: addBasePath("/icons/plus.svg"),
+    alt: "plus symbol"
   }
 }
 

@@ -6,7 +6,9 @@ export const stickerPageImages = {
 
 export const stickerPageText = {
   bannerTitle: "Stickers",
-  bannerSubtitle: "Check out and purchase our stickers!"
+  bannerSubtitle: "Check out and purchase our stickers!",
+
+  stickerHeader: "Our Stickers"
 }
 
 export const allStickersList = stickersList;
